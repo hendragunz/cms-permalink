@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @credit_card.name
+%p
+  %b Expiry date:
+  = @credit_card.expiry_date
+%p
+  %b Number:
+  = @credit_card.number
+
+= link_to 'Edit', edit_credit_card_path(@credit_card)
+\|
+= link_to 'Back', credit_cards_path

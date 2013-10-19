@@ -14,4 +14,10 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
-//= require_tree .
+//= require jquery.meio.mask
+//
+//
+
+$(document).ready(function() {
+  $('.cc-field').setMask('cc')
+});

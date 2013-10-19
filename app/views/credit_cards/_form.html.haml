@@ -1,0 +1,10 @@
+= simple_form_for(@credit_card) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :expiry_date
+    = f.input :number, :input_html => { :class => 'cc-field' }
+
+  .form-actions
+    = f.button :submit
