@@ -13,7 +13,8 @@
 class CreditCard < ActiveRecord::Base
   # validation
   validates :name,        presence: true
-  validates :number,      presence: true
+  validates :number,      presence: true,
+                          uniqueness: { case_sensitive: false }
   validates :expiry_date, presence: true
   validate  :check_credit_card_number
 

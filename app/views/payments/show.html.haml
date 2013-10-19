@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Line item:
+  = @payment.line_item_id
+%p
+  %b Service:
+  = @payment.service_id
+%p
+  %b Quantity:
+  = @payment.quantity
+%p
+  %b Item price:
+  = @payment.item_price
+
+= link_to 'Edit', edit_payment_path(@payment)
+\|
+= link_to 'Back', payments_path

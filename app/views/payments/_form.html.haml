@@ -1,0 +1,11 @@
+= simple_form_for(@payment) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.association :line_item
+    = f.association :service
+    = f.input :quantity
+    = f.input :item_price
+
+  .form-actions
+    = f.button :submit
